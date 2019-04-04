@@ -12,16 +12,16 @@
     "0.1.0 - Add ospatch functionality"
   ],
   "install": {
-    "path": "packaging/install.ps1"
+    "path": "install.ps1"
   },
   "uninstall": {
-    "path": "packaging/uninstall.ps1"
+    "path": "uninstall.ps1"
   },
   "sources": [{
       "include": [
         "cowsay.exe",
-        "packaging/install.ps1",
-        "packaging/uninstall.ps1"
+        "install.ps1",
+        "uninstall.ps1"
       ]
   }],
   "build": {

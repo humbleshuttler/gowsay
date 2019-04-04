@@ -16,11 +16,6 @@
 echo "present working directory $PWD"
 source common.sh
 
-echo "go path is $GOPATH"
-rm -rf ${GOPATH}/src/cowsay
-sudo cp -r src /usr/share/gocode/src/cowsay
-
-
 echo "Building package"
 sudo su -c "GOPATH=${GOPATH} ${GO} get -d github.com/google/googet/goopack"
-$GO run github.com/google/googet/goopack packaging/cowsay.goospec
+$GO run github.com/google/googet/goopack cowsay.goospec
