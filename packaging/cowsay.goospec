@@ -1,0 +1,30 @@
+{
+  "name": "cowsay",
+  "version": "0.5.1@1",
+  "arch": "x86_64",
+  "authors": "iamsubratp",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "description": "cowsay",
+  "files": {
+    "cowsay.exe": "<ProgramFiles>/Google/OSConfig/cowsay.exe"
+  },
+  "releaseNotes": [
+    "0.1.0 - Add ospatch functionality"
+  ],
+  "install": {
+    "path": "packaging/install.ps1"
+  },
+  "uninstall": {
+    "path": "packaging/uninstall.ps1"
+  },
+  "sources": [{
+      "include": [
+        "cowsay.exe",
+        "packaging/install.ps1",
+        "packaging/uninstall.ps1"
+      ]
+  }],
+  "build": {
+    "linux": "./build.sh"
+  }
+}
