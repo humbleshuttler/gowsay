@@ -11,13 +11,9 @@
   "releaseNotes": [
     "0.1.0 - Add ospatch functionality"
   ],
-  "uninstall": {
-    "path": "uninstall.ps1"
-  },
   "sources": [{
       "include": [
         "cowsay.exe",
-        "uninstall.ps1"
       ]
   }],
   "build": {
